@@ -2,8 +2,8 @@
 
 ## Introduction
 
-As the share of electricity from offshore wind is increasing [1], an increasing concern has been raised about logistic challenges they represent. 
-The maintenance of offshore wind turbines involve specialized vessels and crew that are constrained by weather and logistics, leading to significant costs compared to onshore wind.
+As the share of electricity from offshore wind is increasing [1], an increasing concern has been raised about the logistic challenges they represent. 
+The maintenance of offshore wind turbines involves specialized vessels and crew that are constrained by weather and logistics, leading to significant costs compared to onshore wind.
 
 How can we optimize costs related to the maintenance of the offshore wind turbines ?
 
@@ -36,13 +36,13 @@ class NoStrategy(MaintenanceStategy):
         return False
 ```
 
-This method takes as input the current state of the turbine and its environment, and should return True is the vessel is to be sent , otherwise False.
+This method takes as input the current state of the turbine and its environment, and should return True if the vessel is to be sent , otherwise False.
 
-The vessel characteritics are the following:
+The vessel characteristics are the following:
 
 max wind speed : the maximum wind speed for which the vessel is allowed to sail. The vessel will not sail even if the strategy says it has to.
 
-mainenance duration : the time the vessel will spend on the turbine to fix the system, at the end the pressure is set back to its maximum value
+maintenance duration : the time the vessel will spend on the turbine to fix the system, at the end the pressure is set back to its maximum value
 
 vessel cost: the cost that will be deducted from the revenue for each round trip 
 
@@ -74,7 +74,7 @@ P(t)=P(t-1)-DR
 - P is the pressure of the coolant
 - DR : Decline rate
 
-The two other parameters difined in the code are:
+The two other parameters defined in the code are:
 
 - Initial pressure : max pressure when the vessel fixes the system
 - Minimum pressure : Pressure at which the turbine will stop
@@ -109,7 +109,7 @@ power_curve.csv : Power curve representing the power produced for a given wind s
 wind_data.csv : wind data for years 2015 - 2021 ( dummy data )
  - wind speed (m/s)
 
-electricity_prices.csv : Norway whoesale price ( https://ember-climate.org/data-catalogue/european-wholesale-electricity-price-data/)
+electricity_prices.csv : Norway wholesale price ( https://ember-climate.org/data-catalogue/european-wholesale-electricity-price-data/)
 - Price (Eur/MWh)
 
 
@@ -152,7 +152,7 @@ First, clone the repository:
 git clone https://github.com/equinor/case-hackathon-2024.git
 ```
 
-Mavigate to the cloned repository
+Navigate to the cloned repository
 
 ```
 cd case-hackathon-2024
@@ -188,7 +188,7 @@ Install dependencies with Poetry:
 poetry install
 ```
 
-activate virtual environment
+Activate the virtual environment
 
 ```
 poetry shell

@@ -25,13 +25,16 @@ The total revenue is calculated as part of the MaintenanceStategy Class, the tas
 For example this Sub Class illustrate a "No strategy" Scenario where the turbine is never visited
 
 ```python
-class NoStrategy(MaintenanceStategy):
-      
+class CustomStrategy(MaintenanceStrategy):
+
     def __init__(self) -> None:
         super().__init__()
         self.name="No Strategy"
         
-    def fix_pressure(self,current_pressure,current_time,current_wind_speed,current_price):
+    def def fix_pressure(self, current_pressure: float, current_time: datetime, current_wind_speed: float, current_price: float) -> bool:
+
+        # place your code here
+        # should return True (= send vessel) or False
 
         return False
 ```

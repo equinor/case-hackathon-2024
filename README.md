@@ -138,7 +138,7 @@ It should be possible to use this repo in google colab
 navigate to https://colab.research.google.com , choose "Github" and paste the repo url : https://github.com/equinor/case-hackathon-2024.git
 
 
-### Poetry ( more advanced users )
+### pip / Poetry ( more advanced users )
 
 Before you begin, make sure you have the following requirements installed:
 
@@ -158,7 +158,17 @@ Mavigate to the cloned repository
 cd case-hackathon-2024
 ```
 
-#### Option 1: Using Poetry
+#### Option 1: Using requirements.txt
+
+If you want to use your current environment, you can use the requirements.txt file directly
+
+install the required packages using pip:
+
+```
+pip install -r requirements.txt
+```
+
+#### Option 2: Using Poetry 
 
 If you don't have Poetry installed, install it using pip or Homebrew on macOS:
 
@@ -178,15 +188,13 @@ Install dependencies with Poetry:
 poetry install
 ```
 
-#### Option 2: Using requirements.txt
-
-If you want to use your current environment, you can use the requirements.txt file directly
-
-install the required packages using pip:
+activate virtual environment
 
 ```
-pip install -r requirements.txt
+poetry shell
 ```
+
+
 
 #### Set up the jupyter kernel
 

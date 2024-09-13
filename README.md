@@ -31,7 +31,7 @@ class CustomStrategy(MaintenanceStrategy):
         super().__init__()
         self.name="No Strategy"
         
-    def def fix_pressure(self, current_pressure: float, current_time: datetime, current_wind_speed: float, current_price: float) -> bool:
+    def fix_pressure(self, current_pressure: float, current_time: datetime, current_wind_speed: float, current_price: float) -> bool:
 
         # place your code here
         # should return True (= send vessel) or False

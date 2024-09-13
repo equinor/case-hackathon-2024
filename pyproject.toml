@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ntnu-case-hackathon"
+version = "0.1.0"
+description = "ntnu case competition code"
+authors = ["Thif"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+matplotlib = "^3.9.1.post1"
+ipykernel = "^6.29.5"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
